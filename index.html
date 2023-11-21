@@ -11,36 +11,37 @@
     <div class="container">
 <form action="">
     <p>CASIO</p>
-    <input type="text" id="screen">
+    <input type="text" id="result" readonly>
     <br>
-    <input class="button operator" type="button" value="(">
+    <input class="button operator" type="button" onclick="displayData('')" value="(">
     <input class="button operator" type="button" value=")">
-    <input class="button clear" type="button" value="clr">
-    <input class="button operator" type="button" value="/">
+    <input class="button clear" type="button" onclick="calculatorClear()" value="clr">
+    <input class="button operator" type="button" onclick="displayData('/')" value="/">
     <br>
-    <input class="button number" type="button" value="7">
-    <input class="button number" type="button" value="8">
-    <input class="button number" type="button" value="9">
-    <input class="button operator" type="button" value="x">
+    <input class="button number" type="button" onclick="displayData('7')" value="7">
+    <input class="button number" type="button" onclick="displayData('8')" value="8">
+    <input class="button number" type="button" onclick="displayData('9')" value="9">
+    <input class="button operator" type="button" onclick="displayData('x')" value="x">
     <br>
-    <input class="button number" type="button" value="4">
-    <input class="button number" type="button" value="5">
-    <input class="button number" type="button" value="6">
-    <input class="button operator" type="button" value="-">
+    <input class="button number" type="button" onclick="displayData('4')" value="4">
+    <input class="button number" type="button" onclick="displayData('5')" value="5">
+    <input class="button number" type="button" onclick="displayData('6')" value="6">
+    <input class="button operator" type="button" onclick="displayData('-')" value="-">
     <br>
-    <input class="button number" type="button" value="1">
-    <input class="button number" type="button" value="2">
-    <input class="button number" type="button" value="3">
-    <input class="button operator" type="button" value="+">
+    <input class="button number" type="button" onclick="displayData('1')" value="1">
+    <input class="button number" type="button" onclick="displayData('2')" value="2">
+    <input class="button number" type="button" onclick="displayData('3')" value="3">
+    <input class="button operator" type="button" onclick="displayData('+')" value="+">
     <br>
-    <input class="button number" type="button" value="0">
-    <input class="button operator" type="button" value=".">
-    <input class="button operator" type="button" value="exp">
-    <input class="button result" type="button" value="=">
+    <input class="button number" type="button" onclick="displayData('0')" value="0">
+    <input class="button operator" type="button" onclick="displayData('.')" value=".">
+    <input class="button operator" type="button" onclick="removeLst()" value="Del">
+    <input class="button result" type="button" onclick="calculateResult()" value="=">
     <br>
 
 
 </form>
     </div>
 </body>
+<script src="./main.js"></script>
 </html>
